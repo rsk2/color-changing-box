@@ -1,2 +1,2 @@
 # color-changing-box
-A color changing HTML box implemented using ReactJS 
+A box that can change color depending on user input implemented using ReactJS 
