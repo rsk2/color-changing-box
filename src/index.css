@@ -24,6 +24,16 @@ body {
   border-radius: 5px;
 }
 
+.colorbox:active {
+  vertical-align: top;
+  padding: 8px 13px 6px;
+}
+
+ .colorbox > span {
+  position: relative;
+  top: 50%;
+}   
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
