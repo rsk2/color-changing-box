@@ -7,6 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.box  {
+  max-width: 400px;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.colorbox {
+  height:200px;
+  width:200px;
+  margin:auto;
+  border-radius: 5px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
