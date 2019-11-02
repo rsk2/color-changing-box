@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
+import colorService from './colorService/index.js';
 import ColorBox from './components/ColorBox.js';
 import './index.css';
 
@@ -17,10 +17,22 @@ changeColorBox= () => {
  )   
 }
 
+getRandomColor = () => {
+    colorService().then( randomColor => {
+        this.setState({
+            color: randomColor.color
+        })
+    })
+}
+
+componentDidMount() {
+    this.getRandomColor();
+}
+
     render() {
         return (
         <div className="box">
-            <ColorBox inputColor= {this.state.color}/>
+            <ColorBox inputColor= {this.state.color} getNewColor={() => this.getRandomColor()} />
             <input type="text"  id="newColor"/> 
              <button onClick={this.changeColorBox}>Change</button>
              <br/>
