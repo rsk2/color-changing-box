@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47f846b310eb3559a43f16253108c083",
+    "revision": "fc12c09aa70d00f266097b0d82c139f3",
     "url": "/color-changing-box/index.html"
   },
   {
-    "revision": "a3f87fa2e6700d99cb7a",
-    "url": "/color-changing-box/static/css/main.28f7168e.chunk.css"
+    "revision": "13b054a8755a71631491",
+    "url": "/color-changing-box/static/css/main.198d23a3.chunk.css"
   },
   {
     "revision": "484428c7ea1635925dbb",
     "url": "/color-changing-box/static/js/2.3017d388.chunk.js"
   },
   {
-    "revision": "a3f87fa2e6700d99cb7a",
-    "url": "/color-changing-box/static/js/main.dca0c767.chunk.js"
+    "revision": "13b054a8755a71631491",
+    "url": "/color-changing-box/static/js/main.14fd3704.chunk.js"
   },
   {
     "revision": "7f830ffd019aa88ceb5a",
