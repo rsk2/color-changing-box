@@ -7,7 +7,7 @@ import './index.css';
 
 class ColorChanger extends Component {
 state = {
-    color: "red",
+    color: "Red",
 }
 
 changeColorBox= () => {
@@ -24,7 +24,7 @@ changeColorBox= () => {
             <input type="text"  id="newColor"/> 
              <button onClick={this.changeColorBox}>Change</button>
              <br/>
-             You have entered the color: {this.state.color}
+             Color selected is: {this.state.color}
              <br/>
              Get list of available colors <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">here</a>
           
