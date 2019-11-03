@@ -34,6 +34,26 @@ const colorList = [
     {
         color: "IndianRed",
         hex: "#CD5C5C"
+    },
+    {
+        color: "Khaki",
+        hex: "#F0E68C"
+    },
+    {
+        color: "LawnGreen",
+        hex: "#7CFC00"
+    },
+    {
+        color: "LightPink",
+        hex: "#FFB6C1"
+    },
+    {
+        color: "LightSlateGrey",
+        hex: "#778899"
+    },
+    {
+        color: "MediumPurple",
+        hex: "#9370DB"
     }
 
 ]
