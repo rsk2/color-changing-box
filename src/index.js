@@ -33,7 +33,7 @@ componentDidMount() {
         return (
         <div className="box">
             <ColorBox inputColor= {this.state.color} getNewColor={() => this.getRandomColor()} />
-            <input type="text"  id="newColor"/> 
+            <input type="text" placeholder="Type color here" id="newColor"/> 
              <button onClick={this.changeColorBox}>Change</button>
              <br/>
              Color selected is: {this.state.color}
