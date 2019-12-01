@@ -19,10 +19,14 @@ changeColorBox= () => {
 
 getRandomColor = () => {
     colorService().then( randomColor => {
-        this.setState({
-            color: randomColor.color
+        this.setState(prevState => {
+            if(prevState.color !== randomColor.color)
+                return { color: randomColor.color }
+            else
+                return {color: "Blue"}
         })
     })
+    
 }
 
 componentDidMount() {
