@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/color-changing-box/static/css/main.679c6215.chunk.css",
-    "main.js": "/color-changing-box/static/js/main.43ef965a.chunk.js",
-    "main.js.map": "/color-changing-box/static/js/main.43ef965a.chunk.js.map",
+    "main.css": "/color-changing-box/static/css/main.f3c08a03.chunk.css",
+    "main.js": "/color-changing-box/static/js/main.19619bde.chunk.js",
+    "main.js.map": "/color-changing-box/static/js/main.19619bde.chunk.js.map",
     "runtime-main.js": "/color-changing-box/static/js/runtime-main.a6b45425.js",
     "runtime-main.js.map": "/color-changing-box/static/js/runtime-main.a6b45425.js.map",
     "static/js/2.de1a5f2b.chunk.js": "/color-changing-box/static/js/2.de1a5f2b.chunk.js",
     "static/js/2.de1a5f2b.chunk.js.map": "/color-changing-box/static/js/2.de1a5f2b.chunk.js.map",
     "index.html": "/color-changing-box/index.html",
-    "precache-manifest.5f5ac263843098ea79b4c997c90c84f7.js": "/color-changing-box/precache-manifest.5f5ac263843098ea79b4c997c90c84f7.js",
+    "precache-manifest.972c219f894c0df8f2add1171242379e.js": "/color-changing-box/precache-manifest.972c219f894c0df8f2add1171242379e.js",
     "service-worker.js": "/color-changing-box/service-worker.js",
-    "static/css/main.679c6215.chunk.css.map": "/color-changing-box/static/css/main.679c6215.chunk.css.map"
+    "static/css/main.f3c08a03.chunk.css.map": "/color-changing-box/static/css/main.f3c08a03.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.a6b45425.js",
     "static/js/2.de1a5f2b.chunk.js",
-    "static/css/main.679c6215.chunk.css",
-    "static/js/main.43ef965a.chunk.js"
+    "static/css/main.f3c08a03.chunk.css",
+    "static/js/main.19619bde.chunk.js"
   ]
 }
