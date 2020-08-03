@@ -5,7 +5,7 @@ const ColorBox = ({inputColor, getNewColor}) =>{
     return (
         <div className="colorbox" style={{backgroundColor:inputColor}} onClick={() => getNewColor()} >
             <span>
-            Tap Me
+               Tap Me
             </span>
         </div>
     )

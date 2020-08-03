@@ -54,6 +54,58 @@ const colorList = [
     {
         color: "MediumPurple",
         hex: "#9370DB"
+    },
+    {
+        color: "Navy",
+        hex: "#000080"
+    },
+    {
+        color: "Orange",
+        hex: "#FFA500"
+    },
+    {
+        color: "PaleVioletRed",
+        hex: "#DB7093"
+    },
+    {
+        color: "RebeccaPurple",
+        hex: "#663399"
+    },
+    {
+        color: "Red",
+        hex: "#FF0000"
+    },
+    {
+        color: "RoyalBlue",
+        hex: "#4169E1"
+    },
+    {
+        color: "Silver",
+        hex: "#C0C0C0"
+    },
+    {
+        color: "SlateBlue",
+        hex: "#6A5ACD"
+    },
+    {
+        color: "Tan",
+        hex: "#D2B48C"
+    },
+    {
+        color: "Turquoise",
+        hex: "#40E0D0"
+    },
+    {
+        color: "Violet",
+        hex: "#EE82EE"
+    },
+    {
+        color: "White",
+        hex: "#FFFFFF"
+    },
+    {
+        color: "Yellow",
+        hex: "#FFFF00"
     }
 
 ]
