@@ -21,6 +21,7 @@ body {
   height:200px;
   width:200px;
   margin:auto;
+  cursor: pointer;
   border-radius: 5px;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
