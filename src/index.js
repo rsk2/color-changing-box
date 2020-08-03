@@ -8,6 +8,7 @@ import './index.css';
 class ColorChanger extends Component {
 state = {
     color: "Red",
+    hex: "#FF0000"
 }
 
 changeColorBox= () => {
@@ -21,9 +22,9 @@ getRandomColor = () => {
     colorService().then( randomColor => {
         this.setState(prevState => {
             if(prevState.color !== randomColor.color)
-                return { color: randomColor.color }
+                return { color: randomColor.color , hex: randomColor.hex}
             else
-                return {color: "Blue"}
+                return {color: "Blue", hex: "#0000FF"}
         })
     })
     
@@ -37,12 +38,13 @@ componentDidMount() {
         return (
         <div className="box">
             <ColorBox inputColor= {this.state.color} getNewColor={() => this.getRandomColor()} />
-            <input type="text" placeholder="Type color here" id="newColor"/> 
+           { /*<input type="text" placeholder="Type color here" id="newColor"/> 
              <button onClick={this.changeColorBox}>Change</button>
-             <br/>
-             Color selected is: {this.state.color}
-             <br/>
-             Get list of available colors <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">here</a>
+             */}
+            <br/>
+            Color displayed is {this.state.color} ({this.state.hex}). 
+            <br/>
+            Get list of available colors <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">here</a>
           
         </div>
           
