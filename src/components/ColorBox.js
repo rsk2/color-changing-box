@@ -1,10 +1,9 @@
 import React from 'react';
 
-const ColorBox = ({inputColor, getNewColor}) =>{
-
+const ColorBox = ({inputColor, fontColor, getNewColor}) =>{
     return (
         <div className="colorbox" style={{backgroundColor:inputColor}} onClick={() => getNewColor()} >
-            <span>
+            <span style={{color:fontColor}}>
                Tap Me
             </span>
         </div>

@@ -8,23 +8,31 @@ import './index.css';
 class ColorChanger extends Component {
 state = {
     color: "Red",
-    hex: "#FF0000"
-}
-
-changeColorBox= () => {
-
- this.setState(
- {   color: document.getElementById("newColor").value} 
- )   
+    hex: "#FF0000", 
+    fontColor:"white"
 }
 
 getRandomColor = () => {
     colorService().then( randomColor => {
         this.setState(prevState => {
-            if(prevState.color !== randomColor.color)
-                return { color: randomColor.color , hex: randomColor.hex}
+            if(prevState.color !== randomColor.color){
+                var c = randomColor.hex.substring(1);      // strip #
+                var rgb = parseInt(c, 16);   // convert rrggbb to decimal
+                var r = (rgb >> 16) & 0xff;  // extract red
+                var g = (rgb >>  8) & 0xff;  // extract green
+                var b = (rgb >>  0) & 0xff;  // extract blue
+
+                var luma = 0.2126 * r + 0.7152 * g + 0.0722 * b; // per ITU-R BT.709
+                var textColor = "white";
+                if (luma > 128) {
+                    // pick a different colour
+                    textColor = "black";
+                }
+                console.log(textColor)
+                return { color: randomColor.color , hex: randomColor.hex, fontColor: textColor}
+            }
             else
-                return {color: "Blue", hex: "#0000FF"}
+                return {color: "Blue", hex: "#0000FF",  fontColor:"white"}
         })
     })
     
@@ -37,10 +45,7 @@ componentDidMount() {
     render() {
         return (
         <div className="box">
-            <ColorBox inputColor= {this.state.color} getNewColor={() => this.getRandomColor()} />
-           { /*<input type="text" placeholder="Type color here" id="newColor"/> 
-             <button onClick={this.changeColorBox}>Change</button>
-             */}
+            <ColorBox inputColor= {this.state.color} fontColor={this.state.fontColor} getNewColor={() => this.getRandomColor()} />
             <br/>
             Color displayed is {this.state.color} ({this.state.hex}). 
             <br/>
